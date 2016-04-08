@@ -1,0 +1,36 @@
+{
+  "name": "uolsexista",
+  "version": "0.0.1",
+  "description": "Chrome Extension that redacts sexist contents from UOL sports coverage",
+  "scripts": {
+    "build": "browserify -t coffeeify ./src/app.coffee -o ./build/app.js",
+    "postbuild": "uglifyjs -o ./build/app.js ./build/app.js",
+    "test": "mocha --compilers coffee:coffee-script/register tests/tests.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuducos/UOLEsportesSexista.git"
+  },
+  "keywords": [
+    "feminismo",
+    "sexismo",
+    "sexista",
+    "uol",
+    "belas da torcida"
+  ],
+  "author": "Eduardo Cuducos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuducos/UOLEsportesSexista/issues"
+  },
+  "homepage": "https://github.com/cuducos/UOLEsportesSexista#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "coffee-script": "^1.10.0",
+    "coffeeify": "^2.0.1",
+    "jsdom": "^8.3.0",
+    "mocha": "^2.4.5",
+    "mocha-jsdom": "^1.1.0",
+    "uglify-js": "^2.6.2"
+  }
+}

@@ -1,0 +1,1 @@
+Extensão que censura conteúdos sexistas do portal de Espores do UOL.
